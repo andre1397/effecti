@@ -32,11 +32,11 @@ public class LicitacaoEntity implements Serializable{
     @Column(name = "descricao", length = 2000)
     private String descricao;
     @Column(name = "arquivoVisualizar")
-    private String arquivoVisualizar;
+    private String arquivoVisualizar = "https://sig.ifsc.edu.br/";
     @Column(name = "arquivoItens")
-    private String arquivoItens;
+    private String arquivoItens = "https://sig.ifsc.edu.br/";
     @Column(name = "arquivoBaixar")
-    private String arquivoBaixar;
+    private String arquivoBaixar = "https://sig.ifsc.edu.br/public/";
     
     public LicitacaoEntity(String licitacao, String status, String localizacao, String vigencia, String descricao, String arquivoVisualizar, String arquivoItens, String arquivoBaixar) {
 		this.licitacao = licitacao;
@@ -101,7 +101,7 @@ public class LicitacaoEntity implements Serializable{
 	}
 
 	public void setArquivoVisualizar(String arquivoVisualizar) {
-		this.arquivoVisualizar = arquivoVisualizar;
+		this.arquivoVisualizar += arquivoVisualizar;
 	}
 
 	public String getArquivoItens() {
@@ -109,7 +109,7 @@ public class LicitacaoEntity implements Serializable{
 	}
 
 	public void setArquivoItens(String arquivoItens) {
-		this.arquivoItens = arquivoItens;
+		this.arquivoItens += arquivoItens;
 	}
 
 	public String getArquivoBaixar() {
@@ -117,7 +117,7 @@ public class LicitacaoEntity implements Serializable{
 	}
 
 	public void setArquivoBaixar(String arquivoBaixar) {
-		this.arquivoBaixar = arquivoBaixar;
+		this.arquivoBaixar += arquivoBaixar;
 	}
     
 }

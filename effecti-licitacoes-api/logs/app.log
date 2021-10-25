@@ -1,0 +1,15 @@
+2021-10-25 00:44:10,494 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Starting EffectiLicitacoesGerenciador using Java 1.8.0_301 on DESKTOP-ONDL577 with PID 13376 (C:\Users\André\git\effecti\effecti-licitacoes-api\target\classes started by André in C:\Users\André\git\effecti\effecti-licitacoes-api)
+2021-10-25 00:44:10,496 DEBUG com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-10-25 00:44:10,496 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-25 00:44:13,084 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Started EffectiLicitacoesGerenciador in 2.847 seconds (JVM running for 3.25)
+2021-10-25 00:45:55,561 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Starting EffectiLicitacoesGerenciador using Java 1.8.0_301 on DESKTOP-ONDL577 with PID 13376 (C:\Users\André\git\effecti\effecti-licitacoes-api\target\classes started by André in C:\Users\André\git\effecti\effecti-licitacoes-api)
+2021-10-25 00:45:55,561 DEBUG com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-10-25 00:45:55,561 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-25 00:46:00,015 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Starting EffectiLicitacoesGerenciador using Java 1.8.0_301 on DESKTOP-ONDL577 with PID 19408 (C:\Users\André\git\effecti\effecti-licitacoes-api\target\classes started by André in C:\Users\André\git\effecti\effecti-licitacoes-api)
+2021-10-25 00:46:00,017 DEBUG com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-10-25 00:46:00,017 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-25 00:46:02,624 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Started EffectiLicitacoesGerenciador in 2.865 seconds (JVM running for 3.274)
+2021-10-25 00:46:56,239 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Starting EffectiLicitacoesGerenciador using Java 1.8.0_301 on DESKTOP-ONDL577 with PID 19408 (C:\Users\André\git\effecti\effecti-licitacoes-api\target\classes started by André in C:\Users\André\git\effecti\effecti-licitacoes-api)
+2021-10-25 00:46:56,240 DEBUG com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Running with Spring Boot v2.5.6, Spring v5.3.12
+2021-10-25 00:46:56,240 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] No active profile set, falling back to default profiles: default
+2021-10-25 00:46:56,592 INFO com.effecti.gerenciador.EffectiLicitacoesGerenciador [restartedMain] Started EffectiLicitacoesGerenciador in 0.387 seconds (JVM running for 57.242)

@@ -7,18 +7,16 @@ import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.effecti.gerenciador.entities.LicitacaoEntity;
-import com.effecti.gerenciador.repository.LicitacoesRepository;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.effecti.gerenciador.exception.EffectiException;
 
 @Service
 public class WebScrapping {
 
-	public static List<LicitacaoEntity> extrairDados() throws IOException {
+	public static List<LicitacaoEntity> extrairDados() throws EffectiException, IOException {
+		System.out.println("Extraindo dados das licitações...");
 		String url = "https://sig.ifsc.edu.br/public/listaEditais.do?tipo=2&aba=p-editais-atas&buscaTodas=true&acao=544";
 		Document doc = Jsoup.connect(url).get();
 		Element table = doc.getElementsByClass("listagem").first();
@@ -45,7 +43,7 @@ public class WebScrapping {
 			licitacaoEntity.setArquivoBaixar(link.get(2));
 			licitacoesObjects.add(licitacaoEntity);
 		}
-		System.out.println("Feita a extração");
+		System.out.println("Extração Finalizada");
 		return licitacoesObjects;
 	}
 }

@@ -9,12 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.effecti.gerenciador.entities.LicitacaoEntity;
+import com.effecti.gerenciador.exception.EffectiException;
 import com.effecti.gerenciador.repository.LicitacoesRepository;
 import com.effecti.gerenciador.services.LicitacoesServices;
 
 @RestController
 @RequestMapping(value = "api/effecti")
-public class effecti_licitacoesController {
+public class Effecti_licitacoesController {
 	
 	@Autowired
 	private LicitacoesRepository licitacoesRepository;
@@ -22,15 +23,10 @@ public class effecti_licitacoesController {
 	@Autowired
 	private LicitacoesServices licitacaoServices;
 	
-	@GetMapping("/extrair")
-	public void extrair() throws IOException {
+	@GetMapping
+	public List<LicitacaoEntity> listar() throws EffectiException, IOException {
+		licitacaoServices.limpaBD();
 		licitacaoServices.salvaLicitacoes();
-		System.out.println("Dados extraídos e salvos");
-	}
-		
-	@GetMapping("/lista")
-	public List<LicitacaoEntity> listar() throws IOException {
-		System.out.println(licitacoesRepository.findAll());
-		return licitacoesRepository.findAll();
+		return licitacaoServices.listaLicitacoes();
 	}
 }
