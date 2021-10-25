@@ -23,9 +23,9 @@ public class LicitacoesServices {
 		System.out.println("Limpeza completa");
 	}
 	
-	public void salvaLicitacoes() throws EffectiException, IOException {//Esse método executa o WebScrapping e então pega os dados que chegaram e vai salvando eles um por um em objetos no repositório
+	public void salvaLicitacoes() throws EffectiException, IOException {
 		List<LicitacaoEntity> listaLicitacoes = WebScrapping.extrairDados();
-		for (LicitacaoEntity licitacao:listaLicitacoes) {//Percorre a lista toda de Json retornado pelo WebScrapping um por um, é basicamente um forEach
+		for (LicitacaoEntity licitacao:listaLicitacoes) {
 			System.out.println("Salvando licitação: " + licitacao.getLicitacao());
 			licitacoesRepository.save(licitacao);
 		}
