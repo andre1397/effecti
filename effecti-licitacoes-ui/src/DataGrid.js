@@ -3,7 +3,6 @@ import { DataTable } from 'primereact/datatable';
 import { classNames } from 'primereact/utils';
 import { Column } from 'primereact/column';
 import { Dropdown } from 'primereact/dropdown';
-import { MultiSelect } from 'primereact/multiselect';
 
 export class DataTableGridLinesDemo extends Component {
 
@@ -35,7 +34,7 @@ export class DataTableGridLinesDemo extends Component {
     }
 
       componentDidMount() {
-        const url = 'http://localhost:8080/api/effecti';
+        const url = "http://" + window.location.hostname + ":8080/api/effecti";
 
         fetch(url)
         .then((resultado) => resultado.json())
